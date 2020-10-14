@@ -38,7 +38,7 @@
     // Get the result as JSON array
     $result = json_decode($data);
     
-    // Make the test the resulting name#tag retrieved from id
+    // Make the text the resulting name#tag retrieved from id
     $text = $result->username . "#" . $result->discriminator;
     $font_size = 11;
     $font_file = "fonts/verdana.ttf";
@@ -53,7 +53,7 @@
 ?>
 
 <!-- Generated SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="<?php echo 68 + $rect_width; ?>" height="20" role="img" aria-label="Discord: Xiloe#5270">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="<?php echo 68 + $rect_width; ?>" height="20" role="img" aria-label="Discord: <?php echo $text; ?>">
     <title>Discord: <?php echo $text; ?></title>
     <g shape-rendering="crispEdges">
         <rect width="68" height="20" fill="#555"/>
